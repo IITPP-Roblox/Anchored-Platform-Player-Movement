@@ -1,6 +1,9 @@
 {
     "name": "AnchoredPlatformPlayerMovement",
     "tree": {
-        "$path": "./src"
+        "$path": "./src",
+        "NexusBufferedReplication": {
+            "$path": "./module/Nexus-Buffered-Replication"
+        }
     }
 }

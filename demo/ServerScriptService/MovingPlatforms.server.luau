@@ -11,9 +11,9 @@ Platform1.Parent = Workspace
 task.spawn(function()
     while true do
         local Time = tick()
-		local Center = CFrame.new(20 * math.cos(Time), 0.5, 20 * math.sin(Time))
-		Platform1.CFrame = CFrame.new(Center.Position, Vector3.new(0, 0.5, 0))
-		task.wait()
+        local Center = CFrame.new(20 * math.cos(Time), 0.5, 20 * math.sin(Time))
+        Platform1.CFrame = CFrame.new(Center.Position, Vector3.new(0, 0.5, 0))
+        task.wait()
     end
 end)
 
@@ -24,13 +24,13 @@ Platform2.Parent = Workspace
 
 task.spawn(function()
     while true do
-        for i = 1, 90 do
-            Platform2.CFrame = CFrame.new(0, 0.5 + (i / 5), -30)
-            task.wait()
+        for i = 0, 100, 10 do
+            Platform2.CFrame = CFrame.new(0, 0.5 + i, -30)
+            task.wait(0.1)
         end
-        for i = 90, 1, -1 do
-            Platform2.CFrame = CFrame.new(0, 0.5 + (i / 5), -30)
-            task.wait()
+        for i = 100, 0, -10 do
+            Platform2.CFrame = CFrame.new(0, 0.5 + i, -30)
+            task.wait(0.1)
         end
         task.wait(3)
     end
@@ -45,7 +45,7 @@ Platform3.Parent = Workspace
 task.spawn(function()
     while true do
         Platform3.CFrame = CFrame.new(-30, 0.5, 0) * CFrame.Angles(0, (2 * tick()) % (2 * math.pi), 0)
-		task.wait()
+        task.wait()
     end
 end)
 

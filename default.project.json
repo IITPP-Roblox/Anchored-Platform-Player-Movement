@@ -1,0 +1,6 @@
+{
+    "name": "AnchoredPlatformPlayerMovement",
+    "tree": {
+        "$path": "./src"
+    }
+}

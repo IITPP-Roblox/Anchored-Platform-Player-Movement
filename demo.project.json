@@ -1,0 +1,23 @@
+{
+    "name": "AnchoredPlatformPlayerMovementPlace",
+    "tree": {
+        "$className": "DataModel",
+        "ReplicatedStorage": {
+            "$className": "ReplicatedStorage",
+            "AnchoredPlatformPlayerMovement": {
+                "$path": "."
+            }
+        },
+        "ServerScriptService": {
+            "$className": "ServerScriptService",
+            "$path": "./demo/ServerScriptService"
+        },
+        "StarterPlayer": {
+            "$className": "StarterPlayer",
+            "StarterPlayerScripts": {
+                "$className": "StarterPlayerScripts",
+                "$path": "./demo/StarterPlayerScripts"
+            }
+        }
+    }
+}

@@ -335,6 +335,7 @@ function AnchoredPlatformPlayerMovement.EnableClientReplication(self: AnchoredPl
             local Humanoid = Character:FindFirstChildOfClass("Humanoid") :: Humanoid
             local HumanoidRootPart = Character:FindFirstChild("HumanoidRootPart") :: BasePart
             if not Humanoid or not HumanoidRootPart or Humanoid.Health <= 0 then continue end
+            if HumanoidRootPart.AssemblyRootPart ~= HumanoidRootPart then continue end --The AssemblyRootPart is checked in case the player is attached to something else (like the platform through a seat).
             local ExtrapolationTime = math.min((tick() - CurrentPlatform.LastUpdateTime), MAX_EXTRAPOLATION_SECONDS)
             local ExtrapolatedAnglularVelocity = ExtrapolationTime * CharacterAngularVelocity
             HumanoidRootPart.CFrame = CFrame.new(ExtrapolationTime * CharacterVelocity) * AssemblyRoot.CFrame * CharacterOffset * CFrame.Angles(ExtrapolatedAnglularVelocity.X, ExtrapolatedAnglularVelocity.Y, ExtrapolatedAnglularVelocity.Z)

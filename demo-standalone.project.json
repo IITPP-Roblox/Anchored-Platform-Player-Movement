@@ -5,9 +5,9 @@
         "ReplicatedStorage": {
             "$className": "ReplicatedStorage",
             "Packages": {
-                "$path": "./Packages",
+                "$className": "Folder",
                 "AnchoredPlatformPlayerMovement": {
-                    "$path": "."
+                    "$path": "./default-standalone.project.json"
                 }
             }
         },

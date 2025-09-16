@@ -1,0 +1,16 @@
+[package]
+name = "iitpp-roblox/anchored-platform-player-movement"
+repository = "https://github.com/IITPP-Roblox/Anchored-Platform-Player-Movement"
+description = "Move players on moving anchored platforms."
+license = "MIT"
+authors = ["IITPP-Roblox"]
+version = "1.1.0"
+
+registry = "https://github.com/UpliftGames/wally-index"
+realm = "shared"
+
+exclude = ["**"]
+include = ["dist", "dist/*", "src", "src/*", "default.project.json", "wally.lock", "wally.toml"]
+
+[dependencies]
+NexusBufferedReplication = "thenexusavenger/nexus-buffered-replication@1.0.0"

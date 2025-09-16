@@ -3,5 +3,5 @@
 
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
-local AnchoredPlatformPlayerMovement = require(ReplicatedStorage:WaitForChild("AnchoredPlatformPlayerMovement"))
+local AnchoredPlatformPlayerMovement = require(ReplicatedStorage:WaitForChild("Packages"):WaitForChild("AnchoredPlatformPlayerMovement"))
 AnchoredPlatformPlayerMovement:EnableServerReplication()

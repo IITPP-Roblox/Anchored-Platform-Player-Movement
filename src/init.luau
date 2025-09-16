@@ -15,7 +15,7 @@ local CollectionService = game:GetService("CollectionService")
 local RunService = game:GetService("RunService")
 local UserInputService = game:GetService("UserInputService")
 
-local BufferedRemoteEventSender = require(script:WaitForChild("NexusBufferedReplication"):WaitForChild("Sender"):WaitForChild("BufferedRemoteEventSender"))
+local BufferedRemoteEventSender = require(script:WaitForChild("Packages"):WaitForChild("NexusBufferedReplication")).Sender.BufferedRemoteEventSender
 
 local AnchoredPlatformPlayerMovement = {}
 

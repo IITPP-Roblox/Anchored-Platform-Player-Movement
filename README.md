@@ -22,7 +22,7 @@ local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local AnchoredPlatformPlayerMovement = require(...)
 
 AnchoredPlatformPlayerMovement:EnableLocalCharacterUpdates() --Sets up moving the local player (required).
-AnchoredPlatformPlayerMovement:EnableServerReplication() --Sets up replication and moving other players (optional).
+AnchoredPlatformPlayerMovement:EnableClientReplication() --Sets up replication and moving other players (optional).
 AnchoredPlatformPlayerMovement:EnableDebugView(Enum.KeyCode.F2) --Sets up a debug view toggle (optional).
 ```
 
@@ -34,7 +34,7 @@ local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local AnchoredPlatformPlayerMovement = require(...)
 
 AnchoredPlatformPlayerMovement:EnableLocalCharacterUpdates()
-                              :EnableServerReplication()
+                              :EnableClientReplication()
                               :EnableDebugView(Enum.KeyCode.F2)
 ```
 

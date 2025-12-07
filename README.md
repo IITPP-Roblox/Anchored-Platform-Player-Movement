@@ -13,7 +13,7 @@ any parts are needed.
 On the client, at least `EnableLocalCharacterUpdates` must be
 called in the module to move the local player. `EnableDebugView`
 can be optionally called to add a keybind for the debug view,
-and `EnableServerReplication` to enable replication (server setup
+and `EnableClientReplication` to enable replication (server setup
 required).
 
 ```luau
